@@ -1,0 +1,128 @@
+footer {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 10px;
+    width: 100%;
+}
+
+.font {
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+}
+
+.background {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 650px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.basic_info {
+    background-color: white;
+    width: 100%;
+    height: 43%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.basic_info h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.basic_info h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.basic_info p {
+    color: hsl(204, 8%, 60%);
+    line-height: 25px;
+}
+
+.pricing {
+    background-color: hsl(179, 62%, 43%);
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-bottom-left-radius: 25px;
+    color: white;
+}
+
+.pricing button {
+    width: 78%;
+    height: 15%;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.price {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.why_us {
+    background-color: hsl(179, 62%, 60%);
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-bottom-right-radius: 25px;
+    color: white;
+}
+
+.why_us p {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.margin_left {
+    margin-left: 35px;
+}
+
+.padding_left {
+    padding-left: 35px;
+}
+
+.bigger_padding_top {
+    padding-top: 45px;
+}
+
+.smaller_padding_top {
+    padding-top: 20px;
+}
+
+.padding_right {
+    padding-right: 50px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+        height: 50%;
+        padding-right: 35px;
+    }
+
+    .pricing {
+        border-bottom-left-radius: 0;
+    }
+
+    .why_us {
+        border-bottom-right-radius: 0;
+    }
+}
