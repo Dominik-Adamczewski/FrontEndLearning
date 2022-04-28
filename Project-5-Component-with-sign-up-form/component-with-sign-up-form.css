@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 10px;
+    width: 100%;
+}
+
+.background {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.non_actionable {
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.actionable {
+    float: left;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form_container {
+    background-color: white;
+    border-radius: 5px;
+    width: 700px;
+    max-width: 100%;
+}
+
+.form {
+    padding: 40px;
+}
+
+.form_control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form_control.error.inputs {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error.exclamation-circle {
+    visibility: visible;
+}
+
+.error.error_msg {
+    visibility: visible;
+}
+
+.inputs {
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.exclamation-circle {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.error_msg {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.main_header {
+    font-size: 56px;
+    color: white;
+}
+
+.main_paragraph {
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.seven_days_button {
+    position: absolute;
+    top: 5%;
+    left: 1090px;
+    width: 700px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(249, 44%, 56%);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 10px rgba(32, 33, 35, 0.28);
+    cursor: pointer;
+
+}
+
+.submit_form {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.agreement {
+    display: flex;
+    justify-content: center;
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+}
+
+.terms {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
