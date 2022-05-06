@@ -1,8 +1,10 @@
 const form = document.getElementById('form');
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
+const firstNameInput = document.getElementById('fname');
+const lastNameInput = document.getElementById('lname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+
+let errorMessages = false;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -12,21 +14,21 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs() {
     // get the values from inputs
-    const fnameValue = fname.value.trim();
-    const lnameValue = lname.value.trim();
+    const firstNameValue = firstNameInput.value.trim();
+    const lastNameValue = lastNameInput.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
-    if(fnameValue === '') {
+    if(firstNameValue === '') {
         // show error
         // add error class
-        setErrorFor(fname, 'First Name cannot be empty');
+        setErrorFor(firstNameInput, 'First Name cannot be empty');
     }
 
-    if(lnameValue === '') {
+    if(lastNameValue === '') {
         // show error
         // add error class
-        setErrorFor(lname, 'Last Name cannot be empty');
+        setErrorFor(lastNameInput, 'Last Name cannot be empty');
     }
 
     if(emailValue === '') {
@@ -40,6 +42,10 @@ function checkInputs() {
         // add error class
         setErrorFor(password, 'Password cannot be empty');
     }
+
+    if(errorMessages === false) {
+        alert('Form submitted successfully!');
+    }
 }
 
 function setErrorFor(input, message) {
@@ -52,4 +58,5 @@ function setErrorFor(input, message) {
     formControl.className = 'form_control error';
     img.className = 'exclamation-circle error';
     small.className = 'error_msg error';
+    errorMessages = true;
 }

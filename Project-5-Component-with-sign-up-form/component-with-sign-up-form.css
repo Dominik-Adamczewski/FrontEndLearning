@@ -34,6 +34,7 @@ footer {
 }
 
 .actionable {
+    position: relative;
     float: left;
     width: 50%;
     display: flex;
@@ -47,6 +48,7 @@ footer {
     border-radius: 5px;
     width: 700px;
     max-width: 100%;
+    position: relative;
 }
 
 .form {
@@ -114,9 +116,8 @@ footer {
 
 .seven_days_button {
     position: absolute;
-    top: 5%;
-    left: 1090px;
-    width: 700px;
+    top: -15%;
+    width: 100%;
     height: 65px;
     border-radius: 10px;
     border: none;
