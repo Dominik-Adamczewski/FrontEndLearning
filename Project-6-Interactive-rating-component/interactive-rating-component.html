@@ -22,14 +22,14 @@
       <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </div>
     <div class="rating">
-      <button id="id-1" class="number" onclick="reply_click(this.id)" tabindex="1">1</button>
-      <button id="2" class="number" onclick="reply_click(this.id)" tabindex="2">2</button>
-      <button id="3" class="number" onclick="reply_click(this.id)" tabindex="3">3</button>
-      <button id="4" class="number" onclick="reply_click(this.id)" tabindex="4">4</button>
-      <button id="5" class="number" onclick="reply_click(this.id)" tabindex="5">5</button>
+      <button id="1" class="number" onclick="onClick(this.id)">1</button>
+      <button id="2" class="number" onclick="onClick(this.id)">2</button>
+      <button id="3" class="number" onclick="onClick(this.id)">3</button>
+      <button id="4" class="number" onclick="onClick(this.id)">4</button>
+      <button id="5" class="number" onclick="onClick(this.id)">5</button>
     </div>
     <div class="submit">
-      <button class="button" type="submit" onclick="replace(); reply_click();">SUBMIT</button>
+      <button class="button" type="submit" onclick="replace();">SUBMIT</button>
     </div>
   </div>
   <!--Thank you element below-->
@@ -38,7 +38,7 @@
           <img src="./images/illustration-thank-you.svg" alt="Thank you photo">
       </div> 
       <div class="chosen_rating">
-          <span id="rating_info" class="chosen_rating_text">You selected 4 out of 5</span>
+          <span id="rating_info" class="chosen_rating_text">You selected <span id="num"></span> out of 5</span>
       </div>
       <div class="thank_you_text-container">
           <h2 class="thank_you_heading">Thank you!</h2>
