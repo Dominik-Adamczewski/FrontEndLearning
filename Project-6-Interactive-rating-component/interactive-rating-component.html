@@ -22,23 +22,24 @@
       <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </div>
     <div class="rating">
-      <button id="1" class="number" onclick="onClick(this.id)">1</button>
-      <button id="2" class="number" onclick="onClick(this.id)">2</button>
-      <button id="3" class="number" onclick="onClick(this.id)">3</button>
-      <button id="4" class="number" onclick="onClick(this.id)">4</button>
-      <button id="5" class="number" onclick="onClick(this.id)">5</button>
+      <button id="1" class="number">1</button>
+      <button id="2" class="number">2</button>
+      <button id="3" class="number">3</button>
+      <button id="4" class="number">4</button>
+      <button id="5" class="number">5</button>
     </div>
     <div class="submit">
-      <button class="button" type="submit" onclick="replace();">SUBMIT</button>
+      <button id="submit_button" class="button" type="submit">SUBMIT</button>
     </div>
   </div>
-  <!--Thank you element below-->
+  
+  <!--Thank you element-->
     <div id="thank_you_component" class="container" style="display:none;">
       <div class="thank_you_img">
           <img src="./images/illustration-thank-you.svg" alt="Thank you photo">
       </div> 
       <div class="chosen_rating">
-          <span id="rating_info" class="chosen_rating_text">You selected <span id="num"></span> out of 5</span>
+          <span id="rating_info" class="chosen_rating_text">You selected <span id="num">0</span> out of 5</span>
       </div>
       <div class="thank_you_text-container">
           <h2 class="thank_you_heading">Thank you!</h2>
