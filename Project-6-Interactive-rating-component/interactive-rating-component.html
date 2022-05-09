@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="interactive-rating-component.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  
+  <title>Interactive rating component</title>
+</head>
+<body class="background">
+  <div id="initial_component" class="container">
+    <div class="star">
+      <img src="./images/icon-star.svg" alt="Star icon">
+    </div>
+    <div class="text_container">
+      <h2 class="heading">How did we do?</h2>
+      <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+    <div class="rating">
+      <button id="id-1" class="number" onclick="reply_click(this.id)" tabindex="1">1</button>
+      <button id="2" class="number" onclick="reply_click(this.id)" tabindex="2">2</button>
+      <button id="3" class="number" onclick="reply_click(this.id)" tabindex="3">3</button>
+      <button id="4" class="number" onclick="reply_click(this.id)" tabindex="4">4</button>
+      <button id="5" class="number" onclick="reply_click(this.id)" tabindex="5">5</button>
+    </div>
+    <div class="submit">
+      <button class="button" type="submit" onclick="replace(); reply_click();">SUBMIT</button>
+    </div>
+  </div>
+  <!--Thank you element below-->
+    <div id="thank_you_component" class="container" style="display:none;">
+      <div class="thank_you_img">
+          <img src="./images/illustration-thank-you.svg" alt="Thank you photo">
+      </div> 
+      <div class="chosen_rating">
+          <span id="rating_info" class="chosen_rating_text">You selected 4 out of 5</span>
+      </div>
+      <div class="thank_you_text-container">
+          <h2 class="thank_you_heading">Thank you!</h2>
+          <p class="thank_you_paragraph">We appreciate you taking the time to give a rating. <br>If you ever need more support, don't hesitate to <br>get in touch!</p>
+      </div>
+   </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dominik-Adamczewski/FrontEndLearning" target="_blank">Dominik Adamczewski</a>.
+  </footer>
+  <script src="interactive-rating-component.js"></script>
+</body>
+</html>
