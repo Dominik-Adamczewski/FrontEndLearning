@@ -1,11 +1,10 @@
-let faq = document.getElementsByClassName('question');
-let i;
+let faq = document.querySelectorAll('.question');
 
-for(i = 0; i < faq.length; i++) {
+for(let i = 0; i < faq.length; i++) {
     faq[i].addEventListener('click', function() {
         this.classList.toggle('active');
 
-        let answer = this.nextElementSibling;
+        const answer = this.nextElementSibling;
         let arrow = this.firstElementChild;
         if (answer.style.display === "block") {
             answer.style.display = "none";
