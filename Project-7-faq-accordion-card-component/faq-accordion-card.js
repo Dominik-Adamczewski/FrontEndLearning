@@ -1,7 +1,7 @@
-let faq = document.querySelectorAll('.question');
+let questions = document.querySelectorAll('.question');
 
-for(let i = 0; i < faq.length; i++) {
-    faq[i].addEventListener('click', function() {
+questions.forEach(function (question) {
+    question.addEventListener('click', function() {
         this.classList.toggle('active');
 
         const answer = this.nextElementSibling;
@@ -13,5 +13,5 @@ for(let i = 0; i < faq.length; i++) {
             answer.style.display = "block";
             arrow.classList.add('arrow-active');
         }
-    });
-}
+    })
+})
