@@ -14,4 +14,4 @@ questions.forEach(function (question) {
             arrow.classList.add('arrow-active');
         }
     })
-})
+});
