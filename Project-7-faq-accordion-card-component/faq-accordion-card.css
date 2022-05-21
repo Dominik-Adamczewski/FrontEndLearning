@@ -102,6 +102,11 @@ footer a {
 
 .answer {
     width: 80%;
+    display: none;
+}
+
+.answer.answer_active {
+    display: block;
 }
 
 .active {
