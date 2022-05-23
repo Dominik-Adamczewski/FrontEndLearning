@@ -102,7 +102,12 @@ footer a {
 
 .icon {
     display: inline-flex;
-    float: right;
+    cursor: pointer;
+}
+
+.question_and_icon {
+    display: flex;
+    justify-content: space-between;
 }
 
 .question_container .input:checked ~ label .question {
