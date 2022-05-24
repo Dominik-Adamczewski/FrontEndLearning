@@ -53,9 +53,11 @@ footer a {
    position: absolute;
    top: 30%;
    left: 22.5%;
-   width: 400px;
+   height: auto;
+   max-width: 400px;
    overflow: hidden;
    direction: rtl;
+   width: 100%;
 }
 
 .image_box {
@@ -86,13 +88,14 @@ footer a {
     float: right;
 }
 
-.arrow.arrow-active {
+.question.active .arrow {
     transform: rotate(180deg);
 }
 
 .question {
-    display: inline-block;
+    display: flex;
     width: 80%;
+    justify-content: space-between;
 }
 
 .question:hover {
