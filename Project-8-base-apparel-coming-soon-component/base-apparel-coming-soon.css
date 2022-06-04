@@ -9,6 +9,67 @@ body {
     overflow: hidden;
 }
 
+.popup-wrapper {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 25px;
+}
+
+.popup-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 75%;
+}
+
+.check_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-confirm-button {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    margin-top: 15px;
+}
+
+.popup-confirm-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px hsl(0, 36%, 70%);
+}
 
 .attribution {
     font-size: 14px;
