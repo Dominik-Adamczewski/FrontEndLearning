@@ -9,9 +9,14 @@ body {
     height: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 10px;
+    width: 100%;
 }
 
 .container {
@@ -142,4 +147,9 @@ a {
     border-width: 5px;
     border-style: solid;
     border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.social-icons-container a {
+    text-decoration: none;
+    color: white;
 }
