@@ -91,7 +91,7 @@ body {
 
 .share-icon:hover {
     cursor: pointer;
-    border: 2px solid hsl(214, 17%, 51%);
+    outline: 2px solid hsl(214, 17%, 51%);
 }
 
 .content {
