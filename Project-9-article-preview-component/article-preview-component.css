@@ -22,6 +22,7 @@ body {
 .container {
     height: 320px;
     width: 45%;
+    font-size: 0;
 }
 
 .left-column {
@@ -109,6 +110,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     color: hsl(214, 17%, 51%);
     width: 88%;
+    font-size: 16px;
 }
 
 .avatar-name {
@@ -152,4 +154,74 @@ body {
 .social-icons-container a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 375px) {
+    
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        height: 50%;
+        width: 90%;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .right-column {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .furniture-photo {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 25px;
+        width: 100%
+    }
+
+    .content h2 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .avatar-container {
+        width: 100%;
+    }
+
+    .avatar-column-one {
+        width: 20%;
+    }
+
+    .share-icon {
+        position: initial;
+        z-index: 1;
+    }
+
+    .social-icons-container {
+        top: 76.5%;
+        left: 5%;
+        width: 250px;
+        height: 60px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        z-index: 0;
+    }
+
+    .social-icons-container::after {
+        display: none;
+    }
 }
