@@ -24,5 +24,5 @@ const updateUI = (data) => {
 diceButton.addEventListener('click', () => {
     getAdvice()
         .then(data => updateUI(data))
-        .catch(error => console.log(error.message));
+        .catch(error => console.error(error.message));
 })
