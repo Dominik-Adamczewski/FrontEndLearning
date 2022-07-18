@@ -1,0 +1,249 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 10px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.general-error.general-error-active {
+    display: flex;
+    position: absolute;
+    top: 78%;
+    left: 32%;
+    width: 35%;
+    height: 6%;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    border-radius: 10px;
+}
+
+.general-error {
+    display: none;
+}
+
+.error-icon {
+    margin-right: 10px;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.bill-container,
+.tip-selection-container,
+.people-container { 
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bill,
+.people {
+    width: 80%;
+}
+
+.bill-input,
+.people-input {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    direction: rtl;
+    padding-right: 15px;
+    outline: none;
+}
+
+.bill-input:focus,
+.people-input:focus {
+    border: 2px solid hsl(173, 53%, 61%);
+}
+
+.bill-input::placeholder,
+.people-input::placeholder {
+    color: hsl(183, 100%, 15%);
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.bill-input:focus::placeholder,
+.people-input:focus::placeholder {
+    color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bill-icon,
+.people-icon {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.tip-selection {
+    width: 80%;
+}
+
+.table-cell {
+    width: 114px;
+    height: 40px;
+    padding: 5px;
+}
+
+.tip-percentage {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:  hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: hsl(189, 41%, 97%);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tip-percentage.tip-custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    width: 90%;
+    height: 100%;
+    cursor: text;
+    direction: rtl;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.tip-percentage.tip-custom::placeholder {
+    text-align: center;
+}
+
+.tip-percentage.tip-custom:focus::placeholder {
+    color: transparent;
+}
+
+.tip-percentage.tip-custom:focus {
+    outline: 2px solid hsl(173, 53%, 61%);
+}
+
+.tip caption {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.tip-amount-container,
+.total-amount-container,
+.reset-button-container {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tip-amount-text,
+.total-amount-text {
+    font-size: 18px;
+    color: hsl(184, 14%, 56%);
+    
+}
+
+.display-amount {
+    height: 90%;
+    margin: 25px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+
+.light-font-color {
+    color: hsl(189, 41%, 97%);
+}
+
+.tip-amount,
+.total-amount {
+    color: hsl(173, 40%, 46%);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.reset,
+.calculate {
+    width: 40%;
+    height: 40px;
+    background-color: hsl(173, 53%, 61%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reset:active {
+    background-color: hsl(173, 74%, 75%);
+}
+
+.button-active {
+    background-color: hsl(173, 74%, 75%);
+    color: hsl(183, 100%, 15%);
+}
+
+.people-error,
+.bill-error {
+    color: hsl(36, 68%, 52%);
+    font-weight: 700;
+    font-size: 14px;
+    float: right;
+    display: none;
+}
+
+.error-active {
+    display: inline;
+}
+
+.input-error {
+    border: 2px solid hsl(36, 68%, 52%) !important;
+}

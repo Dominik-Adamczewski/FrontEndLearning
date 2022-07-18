@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="tip-calculator.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+  <title>Tip calculator</title>
+</head>
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="Logo" width="100px" height="60px">
+  </div>
+  <div class="general-error">
+    <img class="error-icon" src="./images/Exclamation.png" alt="Exclamation icon">
+    Please, provide Bill amount, Tip percentage and Number of people to proceed
+  </div>
+  <div class="container">
+    <div class="left-column">
+      <div class="bill-container">
+        <div class="bill">
+          <label class="bill-label" for="bill">Bill</label>
+          <span class="bill-error">Can't be a zero</span><br>
+          <img class="bill-icon" src="./images/icon-dollar.svg" alt="Dollar icon">
+          <input class="bill-input" type="number" id="bill" name="bill" placeholder="0">
+        </div>
+      </div>
+      <div class="tip-selection-container">
+        <div class="tip-selection">
+          <table class="tip">
+            <caption>Select Tip</caption>
+            <tr>
+              <td class="table-cell">
+                <input type="button" id="five-percent" name="five-percent" class="tip-percentage" value="5">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="ten-percent" name="ten-percent" class="tip-percentage" value="10">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="fifteen-percent" name="fifteen-percent" class="tip-percentage" value="15">
+              </td>
+            </tr>
+            <tr>
+              <td class="table-cell">
+                <input type="button" id="twenty-five-percent" name="twenty-five-percent" class="tip-percentage" value="25">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="fifty-percent" name="fifty-percent" class="tip-percentage" value="50">
+              </td>
+              <td class="table-cell">
+                <input type="number" id="custom-percent" name="custom-percent" class="tip-percentage tip-custom" placeholder="Custom" maxlength="99">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="people-container">
+        <div class="people">
+          <label class="people-label" for="people">Number of people</label>
+          <span class="people-error">Can't be a zero</span><br>
+          <img class="people-icon" src="./images/icon-person.svg" alt="Person icon">
+          <input class="people-input" type="number" id="people" name="number" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="display-amount">
+        <div class="tip-amount-container">
+          <p class="tip-amount-text"><span class="light-font-color">Tip Amount</span><br>/ person</p>
+          <span class="tip-amount">0.00$</span>
+        </div>
+        <div class="total-amount-container">
+          <p class="total-amount-text"><span class="light-font-color">Total</span><br>/ person</p>
+          <span class="total-amount">0.00$</span>
+        </div>
+        <div class="reset-button-container">
+          <button class="reset">RESET</button>
+          <button class="calculate">COUNT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Dominik-Adamczewski/FrontEndLearning">Dominik Adamczewski</a>.
+  </div>
+  <script src="tip-calculator.js"></script>
+</body>
+</html>
