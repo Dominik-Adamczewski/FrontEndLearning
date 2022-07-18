@@ -14,9 +14,9 @@
 </head>
 <body>
   <div class="logo">
-    <img src="./images/logo.svg" alt="Logo">
+    <img src="./images/logo.svg" alt="Logo" width="100px" height="60px">
   </div>
-  <div class="error">
+  <div class="general-error">
     <img class="error-icon" src="./images/Exclamation.png" alt="Exclamation icon">
     Please, provide Bill amount, Tip percentage and Number of people to proceed
   </div>
@@ -35,14 +35,25 @@
           <table class="tip">
             <caption>Select Tip</caption>
             <tr>
-              <td class="table-cell"><input type="button" id="five-percent" name="five-percent" class="tip-percentage" value="5%"></td>
-              <td class="table-cell"><input type="button" id="ten-percent" name="ten-percent" class="tip-percentage" value="10%"></td>
-              <td class="table-cell"><input type="button" id="fifteen-percent" name="fifteen-percent" class="tip-percentage" value="15%"></td>
+              <td class="table-cell">
+                <input type="button" id="five-percent" name="five-percent" class="tip-percentage" value="5">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="ten-percent" name="ten-percent" class="tip-percentage" value="10">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="fifteen-percent" name="fifteen-percent" class="tip-percentage" value="15">
+              </td>
             </tr>
             <tr>
-              <td class="table-cell"><input type="button" id="twenty-five-percent" name="twenty-five-percent" class="tip-percentage" value="25%"></td>
-              <td class="table-cell"><input type="button" id="fifty-percent" name="fifty-percent" class="tip-percentage" value="50%"></td>
-              <td class="table-cell"><input type="number" id="custom-percent" name="custom-percent" class="tip-percentage tip-custom" placeholder="Custom" maxlength="99">
+              <td class="table-cell">
+                <input type="button" id="twenty-five-percent" name="twenty-five-percent" class="tip-percentage" value="25">
+              </td>
+              <td class="table-cell">
+                <input type="button" id="fifty-percent" name="fifty-percent" class="tip-percentage" value="50">
+              </td>
+              <td class="table-cell">
+                <input type="number" id="custom-percent" name="custom-percent" class="tip-percentage tip-custom" placeholder="Custom" maxlength="99">
               </td>
             </tr>
           </table>

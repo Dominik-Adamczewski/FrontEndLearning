@@ -1,29 +1,20 @@
 function removeActiveStyle() {
     let activeButton = document.querySelectorAll('.tip-percentage.button-active');
     activeButton.forEach((element) => {
-        if(element.classList.contains('button-active')) {
-            element.classList.remove('button-active');
-        }
+        element.classList.remove('button-active');
     })
 };
 
 function removeBillError() {
-    if(billError.classList.contains('error-active')) {
-        billError.classList.remove('error-active');
-    }
+    billError.classList.remove('error-active');
 
-    if(billInput.classList.contains('input-error')) {
-        billInput.classList.remove('input-error');
-    }
+    billInput.classList.remove('input-error');
+
 };
 function removePeopleError() {
-    if(peopleError.classList.contains('error-active')) {
-        peopleError.classList.remove('error-active');
-    }
+    peopleError.classList.remove('error-active');
 
-    if(peopleInput.classList.contains('input-error')) {
-        peopleInput.classList.remove('input-error');
-    }
+    peopleInput.classList.remove('input-error');
 };
 
 
@@ -42,7 +33,7 @@ const calculateButton = document.querySelector('.calculate');
 const tipAmount = document.querySelector('.tip-amount');
 const totalAmount = document.querySelector('.total-amount');
 
-const error = document.querySelector('.error');
+const error = document.querySelector('.general-error');
 
 let tipAmountPerPersonValue;
 let totalAmountPerPersonValue;
@@ -60,16 +51,8 @@ tipButtons.forEach((button) => {
 
         // save percentage to variable
         if(button.classList.contains('button-active')) {
-            if(button.value === '5%') {
-                tipPercentage = 0.05;
-            } else if(button.value === '10%') {
-                tipPercentage = 0.1;
-            } else if(button.value === '15%') {
-                tipPercentage = 0.15;
-            } else if(button.value === '25%') {
-                tipPercentage = 0.25;
-            } else if(button.value === '50%') {
-                tipPercentage = 0.5;
+            if(button.value) {
+                tipPercentage = +button.value/100;
             }
         };
     })
@@ -127,9 +110,12 @@ resetButton.addEventListener('click', () => {
     tipAmount.textContent = '0.00$';
     totalAmount.textContent = '0.00$';
     peopleInput.value = '';
+    numberOfPeople = 0;
     billInput.value = '';
+    billAmount = 0;
     customTipButton.value = '';
-    error.style.display = 'none';
+    tipPercentage = 0;
+    error.classList.remove('general-error-active');
     removePeopleError();
     removeBillError();
 })
@@ -138,9 +124,9 @@ resetButton.addEventListener('click', () => {
 
 calculateButton.addEventListener('click', () => {
     if(billAmount === 0 || numberOfPeople === 0 || tipPercentage === 0) {
-        error.style.display = 'flex';
+        error.classList.add('general-error-active');
     } else {
-        error.style.display = 'none';
+        error.classList.remove('general-error-active');
 
         totalAmountPerPersonValue = billAmount / numberOfPeople;
         tipAmountPerPersonValue = billAmount * tipPercentage / numberOfPeople;

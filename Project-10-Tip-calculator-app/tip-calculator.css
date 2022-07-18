@@ -34,8 +34,8 @@ body {
     background-color: hsl(0, 0%, 100%);
 }
 
-.error {
-    display: none;
+.general-error.general-error-active {
+    display: flex;
     position: absolute;
     top: 78%;
     left: 32%;
@@ -48,6 +48,10 @@ body {
     justify-content: center;
     color: red;
     border-radius: 10px;
+}
+
+.general-error {
+    display: none;
 }
 
 .error-icon {
