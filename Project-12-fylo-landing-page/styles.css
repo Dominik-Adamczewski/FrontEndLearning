@@ -1,0 +1,496 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p, button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+}
+
+footer {
+    background: #0b1523;
+    width: 100%;
+    padding: 220px 0px 40px 0px;
+    z-index: 1;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.navigation-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.navigation-bar-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.navigation-bar-container ul > a {
+    margin: 0 5px;
+}
+
+.main-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image-container img {
+    width: 90%;
+}
+
+.description-container {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.description-container p {
+    font-size: 16px;
+}
+
+.description-container button {
+    width: 75%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #339ecc;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 15px 0px;
+}
+
+.icon {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.icon img {
+    display: block;
+    margin: auto;
+}
+
+.icon h3, .icon p {
+    text-align: center;
+}
+
+.stay-productive-container {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.stay-productive-container img {
+    width: 100%;
+}
+
+.stay-productive-container h3 {
+    text-align: center;
+}
+
+.stay-productive-description-container p {
+    padding: 0px 20px;
+}
+
+.see-how-works-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.see-how-works-container a {
+    border-bottom: 1px solid #65e2d9;
+    color: 	#65e2d9;
+    padding: 2px;
+}
+
+.see-how-works-container a::after {
+    content: url('./images/icon-arrow.svg');
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.comments-container {
+    margin-top: 70px;
+    padding: 0px 30px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.comments-container::before {
+    content: url('./images/bg-quotes.png');
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    z-index: -1;
+}
+
+.comment {
+    padding: 15px;
+    background: #202a3c;
+    margin-top: 25px;
+}
+
+.commenter {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.commenter img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.name-and-position {
+    display: flex;
+    height: 50px;
+    margin-left: 10px;
+    flex-flow: column;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.early-access-container {
+    position: relative;
+    width: 80%;
+    background: #202a3c;
+    padding: 20px;
+    z-index: 2;
+    margin: 0px auto -150px auto;
+}
+
+.early-access-container p, .early-access-container h3 {
+    text-align: center;
+}
+
+.early-access-container form {
+    width: 100%;
+    position: relative;
+}
+
+.early-access-container form > input, .early-access-container form > button {
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+}
+
+.early-access-container form > button {
+    background-color: #339ecc;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.early-access-container form > input {
+    padding-left: 25px;
+}
+
+.address {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.address .footer-icon {
+    margin-right: 5%;
+}
+
+.address-description {
+    display: flex;
+    align-items: flex-start;
+}
+
+.address-description::before {
+    content: url('./images/icon-location.svg');
+    margin-right: 15px;
+}
+
+.telephone img, .email img {
+    margin-right: 15px;
+}
+
+.contact-details {
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+.telephone, .email {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.telephone-number, .email-address {
+    display: flex;
+}
+
+.telephone-number::before {
+    content: url('./images/icon-phone.svg');
+    margin-right: 15px;
+}
+
+.email-address::before {
+    content: url('./images/icon-email.svg');
+    margin-right: 15px;
+}
+
+.links-1, .links-2 {
+    margin-bottom: 40px;
+}
+
+.links-1 a, .links-2 a {
+    display: block;
+    margin: 20px 0px;
+}
+
+.social-container {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons img {
+    cursor: pointer;
+}
+
+.icon-container {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 5px;
+    margin: 5px;
+}
+
+#facebook::after {
+    content: url('./images/facebook.svg');
+}
+
+#twitter::after {
+    content: url('./images/twitter.svg');
+}
+
+#instagram::after {
+    content: url('./images/instagram.svg');
+}
+
+.stay-productive-img-container {
+    padding: 0px 15px;
+}
+
+.footer-data-container {
+    padding: 0px 25px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    top: 57px;
+    left: 24px;
+    font-size: 12px;
+    color: #ff4242;
+}
+
+.error-message.active {
+    display: initial;
+}
+
+@media screen and (min-device-width: 780px) {
+    .main-image-container img {
+        width: 60%;
+    }
+
+    .description-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .description-container button {
+        width: 50%;
+    }
+
+    .description-container button:hover,
+    .early-access-container form button:hover {
+        background-color: #65e2d9;
+    }
+
+    .icons-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .icon {
+        width: 40%;
+        padding: 15px;
+    }
+
+    .stay-productive-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .stay-productive-heading {
+        margin-left: 18px;
+        font-size: 30px;
+        width: 75%;
+        text-align: left;
+    }
+
+    .stay-productive-description-container p,
+    .see-how-works-container a {
+        font-size: 14px;
+    }
+
+    .see-how-works-container:hover {
+        color: white;
+        filter: grayscale(0%) sepia(100%) hue-rotate(180deg) brightness(1.5);
+    }
+
+    .comments-container {
+        display: flex;
+        padding: 0;
+        position: relative;
+    }
+
+    .comments-container::before {
+        top: -25px;
+        left: 3px;
+    }
+
+    .comment {
+        margin: 10px;
+        z-index: 1;
+    }
+
+    .footer-data-container {
+        max-width: 85%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .early-access-container {
+        width: 70%;
+        padding: 20px 40px 20px 40px;
+    }
+
+    .early-access-container div.description {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    div.description-text {
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .early-access-container form {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .early-access-container form input {
+        width: 60%;
+    }
+
+    .early-access-container form button {
+        width: 30%;
+    }
+
+    .contact-details {
+        width: 70%;
+        padding-left: 50px;
+    }
+
+    .footer-logo {
+        position: absolute;
+    }
+
+    .address,
+    .contact-details,
+    .links-1,
+    .links-2,
+    .social-container {
+        margin: 100px 10px 0px 10px;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .links-1,
+    .links-2 {
+        width: 50%;
+    }
+
+    .links-1 a, .links-2 a {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .social-icons {
+        margin-top: -10px;
+    }
+
+    .error-message {
+        top: 90px;
+        left: 40px;
+    }
+
+    .stay-productive-container h3 {
+        text-align: left;
+    }
+}
